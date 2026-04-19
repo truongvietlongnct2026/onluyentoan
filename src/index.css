@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, sans-serif;
+}
+
+:root {
+  --bg: #F9FAFB;
+  --white: #FFFFFF;
+  --primary: #2563EB;
+  --secondary: #64748B;
+  --accent: #F1F5F9;
+  --ink: #1E293B;
+  --border: #E2E8F0;
+  --success: #10B981;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.card-clean {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.btn-clean {
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-clean:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
